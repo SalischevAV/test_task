@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  padding: 12px 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 1280px;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert__content {
+  background-color: white;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.invisible {
+  display: none;
+}
+
+.button {
+  width: 90px;
+  height: 25px;
+  padding: 5px;
+}
+
+.input {
+  border-color: blue;
+  width: 45vw;
+}
+
+.input__error
+    {
+      width: 45vw;
+      animation: shake 0.2s ease-in-out 0s 3;
+      box-shadow: 0 0 0.5em red;
+    }
+
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+}
